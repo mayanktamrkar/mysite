@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form method ="POST" action ='/contact'>
+   {% csrf_token %}
+  <label for="fname">name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="lname">email:</label><br>
+  <input type="text" id="email" name="email" ><br><br>
+  <input type="submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
